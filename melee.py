@@ -17,6 +17,6 @@ pygame.movie.Movie(falco.mpg)
 while not done:
     for event in pygame.event.get():
       if event.type == pygame.QUIT:
-          done = True
+        done = True
       elif event.type == pypgame.KEYDOWN:
         pygame.movie.Movie.play()
