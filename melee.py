@@ -19,4 +19,4 @@ while not done:
       if event.type == pygame.QUIT:
         done = True
       elif event.type == pypgame.KEYDOWN:
-        pygame.movie.Movie.play()
+        pygame.movie.Movie.play(1)
