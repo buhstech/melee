@@ -23,3 +23,4 @@ while not done:
         done = True
       elif event.type == pypgame.KEYDOWN:
         pygame.movie.Movie.play(1)
+pygame.quit()
