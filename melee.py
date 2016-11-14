@@ -34,7 +34,7 @@ while not done:
             done = True
         if event.type == pygame.KEYDOWN:
             pygame.movie.Movie(falco.mpg)
-            pygame.movie.Movie.play()
+            pygame.movie.Movie.play(1)
  
     # --- Game logic should go here
  
