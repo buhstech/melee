@@ -57,16 +57,3 @@ while not done:
  
 # Close the window and quit.
 pygame.quit()
-
-done = False
-clock = pygame.time.Clock()
-pygame.movie.Movie(falco.mpg)
-while not done:
-    screen.fill(WHITE)
-    clock.tick(60)
-    for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        done = True
-      elif event.type == pypgame.KEYDOWN:
-        pygame.movie.Movie.play(1)
-pygame.quit()
