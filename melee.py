@@ -5,6 +5,7 @@
 # Smite is a bad game.
 
 import pygame
+WHITE = (255, 255, 255)
 pygame.init()
 
 size = (700, 500)
@@ -15,6 +16,8 @@ done = False
 clock = pygame.time.Clock()
 pygame.movie.Movie(falco.mpg)
 while not done:
+    screen.fill(WHITE)
+    clock.tick(60)
     for event in pygame.event.get():
       if event.type == pygame.QUIT:
         done = True
