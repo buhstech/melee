@@ -6,12 +6,12 @@
 
 
 meleechar = input("What character do you play in melee?")
-if meleechar == "falco":
+if meleechar == 'falco':
  print("Short hop laser is OP. Brandon has a bad falco.")
-elif meleechar == "mario":
+elif meleechar == 'mario':
  print("ScorpionMaster")
-elif meleechar == "marth":
+elif meleechar == 'marth':
  print("I didn't know you knew how to juggle. Ryan is 2gud.")
-elif meleechar == "roy":
+elif meleechar == 'roy':
  for i in range(10):
   print("Roy is our boy.")
