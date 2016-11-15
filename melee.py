@@ -21,8 +21,7 @@ done = False
 clock = pygame.time.Clock()
 movie = pygame.movie.Movie(falco.mpg) 
   
-# tell the movie to render onto the surface
-movie.set_display( 700,500 )
+
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
