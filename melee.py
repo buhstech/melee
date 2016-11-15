@@ -26,15 +26,9 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 movie = pygame.movie.Movie(falco.mpg) 
-width, height = movie.get_size()
-scale_x = screen.size[0]/float(width)
-scale_y = screen.size[1]/float(height)
-scale = min(scale_x,scale_y) # maintain aspect ratio
-# create pygame surface (buffer to draw uncompressed movie data into)
-pygame_surface = pygame.surface.Surface((width,height))
   
 # tell the movie to render onto the surface
-movie.set_display( pygame_surface )
+movie.set_display( 700,500 )
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
@@ -42,7 +36,7 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
         if event.type == pygame.KEYDOWN:
-            pygame_surface = pygame.surface.Surface((width,height))
+            movie.play()
  
     # --- Game logic should go here
  
