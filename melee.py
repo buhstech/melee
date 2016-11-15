@@ -4,35 +4,14 @@
 # and Rydog (Hyaaaaah) Agundez
 # Smite is a bad game.
 
-import pygame
- 
-pygame.init()
- 
-# Set the width and height of the screen [width, height]
-size = (700, 500)
-screen = pygame.display.set_mode(size)
- 
-pygame.display.set_caption("World Meme database")
- 
-# Loop until the user clicks the close button.
-done = False
- 
-# Used to manage how fast the screen updates
-clock = pygame.time.Clock()
-movie = pygame.movie.Movie(falco.mpg) 
-  
-
-# -------- Main Program Loop -----------
-while not done:
-    # --- Main event loop
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            done = True
-        if event.type == pygame.KEYDOWN:
-            movie.play()
- 
-    # --- Limit to 60 frames per second
-    clock.tick(60)
- 
-# Close the window and quit.
-pygame.quit()
+for i in range(1):
+ meleechar = input("What character do you play in melee?")
+ if meleechar == "falco":
+   print("Short hop laser is OP. Brandon has a bad falco.")
+ elif meleechar == "mario":
+   print("ScorpionMaster")
+ elif meleechar == "marth":
+  print("I didn't know you knew how to juggle. Ryan is 2gud.")
+ elif meleechar == "roy":
+  for i in range(10):
+    print("Roy is our boy.")
